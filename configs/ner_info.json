@@ -1,0 +1,702 @@
+{
+  "ner_es_info":[
+   {
+     "es_host": "192.168.0.75",
+     "es_port": 9200,
+     "es_index": "tagged_jis_text",
+     "es_type": "tagged",
+     "ne_list_name": "ne_list",
+     "word_name": "ne",
+     "main_name": "main",
+     "detail_name": "detail"
+   },
+   {
+     "es_host": "192.168.0.75",
+     "es_port": 9200,
+     "es_index": "tagged_wiki2",
+     "es_type": "tagged",
+     "ne_list_name": "ne_list",
+     "word_name": "word",
+     "main_name": "main",
+     "detail_name": "detail"
+   },
+   {
+     "es_host": "192.168.0.20",
+     "es_port": 9200,
+     "es_index": "tagged4",
+     "es_type": "tagged",
+     "ne_list_name": "ne_list",
+     "word_name": "word",
+     "main_name": "main",
+     "detail_name": "detail"
+   }
+  ],
+  "ner_types_unk_key": 0,
+  "ner_types": [
+        {
+            "key": "0",
+            "main_entity": "개체명아님",
+            "detail_entity": "개체명아님"
+        },
+        {
+            "key": "1",
+            "main_entity": "사람",
+            "detail_entity": "사람 - 일반"
+        },
+        {
+            "key": "2",
+            "main_entity": "사람",
+            "detail_entity": "친족/지인"
+        },
+        {
+            "key": "3",
+            "main_entity": "사람",
+            "detail_entity": "예술가/작가"
+        },
+        {
+            "key": "4",
+            "main_entity": "사람",
+            "detail_entity": "운동선수"
+        },
+        {
+            "key": "5",
+            "main_entity": "사람",
+            "detail_entity": "성직자"
+        },
+        {
+            "key": "6",
+            "main_entity": "사람",
+            "detail_entity": "가상인물"
+        },
+        {
+            "key": "7",
+            "main_entity": "사람",
+            "detail_entity": "정치인"
+        },
+        {
+            "key": "8",
+            "main_entity": "사람",
+            "detail_entity": "학자"
+        },
+        {
+            "key": "9",
+            "main_entity": "사람",
+            "detail_entity": "기업인"
+        },
+        {
+            "key": "10",
+            "main_entity": "사람",
+            "detail_entity": "유명인"
+        },
+        {
+            "key": "11",
+            "main_entity": "지역/장소",
+            "detail_entity": "지역-일반"
+        },
+        {
+            "key": "12",
+            "main_entity": "지역/장소",
+            "detail_entity": "국가명"
+        },
+        {
+            "key": "13",
+            "main_entity": "지역/장소",
+            "detail_entity": "행정구역"
+        },
+        {
+            "key": "14",
+            "main_entity": "지역/장소",
+            "detail_entity": "강"
+        },
+        {
+            "key": "15",
+            "main_entity": "지역/장소",
+            "detail_entity": "바다"
+        },
+        {
+            "key": "16",
+            "main_entity": "지역/장소",
+            "detail_entity": "만"
+        },
+        {
+            "key": "17",
+            "main_entity": "지역/장소",
+            "detail_entity": "산"
+        },
+        {
+            "key": "18",
+            "main_entity": "지역/장소",
+            "detail_entity": "섬"
+        },
+        {
+            "key": "19",
+            "main_entity": "지역/장소",
+            "detail_entity": "대륙"
+        },
+        {
+            "key": "20",
+            "main_entity": "지역/장소",
+            "detail_entity": "관광지"
+        },
+        {
+            "key": "21",
+            "main_entity": "지역/장소",
+            "detail_entity": "천체 명칭"
+        },
+        {
+            "key": "22",
+            "main_entity": "지역/장소",
+            "detail_entity": "부동산/건축물"
+        },
+        {
+            "key": "23",
+            "main_entity": "지역/장소",
+            "detail_entity": "도로"
+        },
+        {
+            "key": "24",
+            "main_entity": "기후/날씨",
+            "detail_entity": "기후/날씨"
+        },
+        {
+            "key": "25",
+            "main_entity": "조직/단체",
+            "detail_entity": "기관/단체-일반"
+        },
+        {
+            "key": "26",
+            "main_entity": "조직/단체",
+            "detail_entity": "경제관련 기관/단체"
+        },
+        {
+            "key": "27",
+            "main_entity": "조직/단체",
+            "detail_entity": "교육관련 기관/단체"
+        },
+        {
+            "key": "28",
+            "main_entity": "조직/단체",
+            "detail_entity": "군사관련 기관/단체"
+        },
+        {
+            "key": "29",
+            "main_entity": "조직/단체",
+            "detail_entity": "미디어 기관/단체"
+        },
+        {
+            "key": "30",
+            "main_entity": "조직/단체",
+            "detail_entity": "스포츠 기관/단체"
+        },
+        {
+            "key": "31",
+            "main_entity": "조직/단체",
+            "detail_entity": "예술 기관/단체"
+        },
+        {
+            "key": "32",
+            "main_entity": "조직/단체",
+            "detail_entity": "의학/의료 기관/단체"
+        },
+        {
+            "key": "33",
+            "main_entity": "조직/단체",
+            "detail_entity": "종교 기관/단체"
+        },
+        {
+            "key": "34",
+            "main_entity": "조직/단체",
+            "detail_entity": "학술 기관/단체"
+        },
+        {
+            "key": "35",
+            "main_entity": "조직/단체",
+            "detail_entity": "도서관"
+        },
+        {
+            "key": "36",
+            "main_entity": "조직/단체",
+            "detail_entity": "법률 기관/단체"
+        },
+        {
+            "key": "37",
+            "main_entity": "조직/단체",
+            "detail_entity": "정치/행정 관련 단체"
+        },
+        {
+            "key": "38",
+            "main_entity": "조직/단체",
+            "detail_entity": "음식 관련 단체"
+        },
+        {
+            "key": "39",
+            "main_entity": "조직/단체",
+            "detail_entity": "숙박 관련 단체"
+        },
+        {
+            "key": "40",
+            "main_entity": "제작물/제품/작품",
+            "detail_entity": "제작물/제품/작품 - 일반"
+        },
+        {
+            "key": "41",
+            "main_entity": "제작물/제품/작품",
+            "detail_entity": "문화재"
+        },
+        {
+            "key": "42",
+            "main_entity": "제작물/제품/작품",
+            "detail_entity": "악기"
+        },
+        {
+            "key": "43",
+            "main_entity": "제작물/제품/작품",
+            "detail_entity": "무기"
+        },
+        {
+            "key": "44",
+            "main_entity": "제작물/제품/작품",
+            "detail_entity": "교통수단"
+        },
+        {
+            "key": "45",
+            "main_entity": "제작물/제품/작품",
+            "detail_entity": "서적/문서"
+        },
+        {
+            "key": "46",
+            "main_entity": "제작물/제품/작품",
+            "detail_entity": "영화/TV프로그램/만화"
+        },
+        {
+            "key": "47",
+            "main_entity": "제작물/제품/작품",
+            "detail_entity": "미술품"
+        },
+        {
+            "key": "48",
+            "main_entity": "제작물/제품/작품",
+            "detail_entity": "음악"
+        },
+        {
+            "key": "49",
+            "main_entity": "제작물/제품/작품",
+            "detail_entity": "상품/제품"
+        },
+        {
+            "key": "50",
+            "main_entity": "제작물/제품/작품",
+            "detail_entity": "약"
+        },
+        {
+            "key": "51",
+            "main_entity": "제작물/제품/작품",
+            "detail_entity": "공연"
+        },
+        {
+            "key": "52",
+            "main_entity": "제작물/제품/작품",
+            "detail_entity": "옷"
+        },
+        {
+            "key": "53",
+            "main_entity": "제작물/제품/작품",
+            "detail_entity": "소프트웨어"
+        },
+        {
+            "key": "54",
+            "main_entity": "시각/시간",
+            "detail_entity": "시각/시간 - 일반"
+        },
+        {
+            "key": "55",
+            "main_entity": "시각/시간",
+            "detail_entity": "년"
+        },
+        {
+            "key": "56",
+            "main_entity": "시각/시간",
+            "detail_entity": "계절"
+        },
+        {
+            "key": "57",
+            "main_entity": "시각/시간",
+            "detail_entity": "지질시대"
+        },
+        {
+            "key": "58",
+            "main_entity": "시각/시간",
+            "detail_entity": "왕조시대"
+        },
+        {
+            "key": "59",
+            "main_entity": "시각/시간",
+            "detail_entity": "기타 시간 표현"
+        },
+        {
+            "key": "60",
+            "main_entity": "시각/시간",
+            "detail_entity": "기간"
+        },
+        {
+            "key": "61",
+            "main_entity": "음식/음료",
+            "detail_entity": "음식"
+        },
+        {
+            "key": "62",
+            "main_entity": "음식/음료",
+            "detail_entity": "음료"
+        },
+        {
+            "key": "63",
+            "main_entity": "음식/음료",
+            "detail_entity": "식재료"
+        },
+        {
+            "key": "64",
+            "main_entity": "문명/문화/직업/계급",
+            "detail_entity": "문명/문화"
+        },
+        {
+            "key": "65",
+            "main_entity": "문명/문화/직업/계급",
+            "detail_entity": "건축양식"
+        },
+        {
+            "key": "66",
+            "main_entity": "문명/문화/직업/계급",
+            "detail_entity": "민족"
+        },
+        {
+            "key": "67",
+            "main_entity": "문명/문화/직업/계급",
+            "detail_entity": "언어"
+        },
+        {
+            "key": "68",
+            "main_entity": "문명/문화/직업/계급",
+            "detail_entity": "인간관계"
+        },
+        {
+            "key": "69",
+            "main_entity": "문명/문화/직업/계급",
+            "detail_entity": "직위/직책/포지션"
+        },
+        {
+            "key": "70",
+            "main_entity": "문명/문화/직업/계급",
+            "detail_entity": "직업"
+        },
+        {
+            "key": "71",
+            "main_entity": "문명/문화/직업/계급",
+            "detail_entity": "순위"
+        },
+        {
+            "key": "72",
+            "main_entity": "제도/금융",
+            "detail_entity": "제도/금융 - 일반"
+        },
+        {
+            "key": "73",
+            "main_entity": "제도/금융",
+            "detail_entity": "제도"
+        },
+        {
+            "key": "74",
+            "main_entity": "제도/금융",
+            "detail_entity": "조세"
+        },
+        {
+            "key": "75",
+            "main_entity": "제도/금융",
+            "detail_entity": "연금/기금"
+        },
+        {
+            "key": "76",
+            "main_entity": "제도/금융",
+            "detail_entity": "통화(화폐)"
+        },
+        {
+            "key": "77",
+            "main_entity": "제도/금융",
+            "detail_entity": "상/포상"
+        },
+        {
+            "key": "78",
+            "main_entity": "제도/금융",
+            "detail_entity": "법"
+        },
+        {
+            "key": "79",
+            "main_entity": "제도/금융",
+            "detail_entity": "단위"
+        },
+        {
+            "key": "80",
+            "main_entity": "제도/금융",
+            "detail_entity": "시험/인증"
+        },
+        {
+            "key": "81",
+            "main_entity": "동물/곤충/미생물",
+            "detail_entity": "동물 - 일반"
+        },
+        {
+            "key": "82",
+            "main_entity": "동물/곤충/미생물",
+            "detail_entity": "곤충"
+        },
+        {
+            "key": "83",
+            "main_entity": "동물/곤충/미생물",
+            "detail_entity": "조류"
+        },
+        {
+            "key": "84",
+            "main_entity": "동물/곤충/미생물",
+            "detail_entity": "어류"
+        },
+        {
+            "key": "85",
+            "main_entity": "동물/곤충/미생물",
+            "detail_entity": "포유류"
+        },
+        {
+            "key": "86",
+            "main_entity": "동물/곤충/미생물",
+            "detail_entity": "양서류"
+        },
+        {
+            "key": "87",
+            "main_entity": "동물/곤충/미생물",
+            "detail_entity": "파충류"
+        },
+        {
+            "key": "88",
+            "main_entity": "동물/곤충/미생물",
+            "detail_entity": "동물 분류"
+        },
+        {
+            "key": "89",
+            "main_entity": "동물/곤충/미생물",
+            "detail_entity": "동물 몸의 일부분"
+        },
+        {
+            "key": "90",
+            "main_entity": "동물/곤충/미생물",
+            "detail_entity": "미생물"
+        },
+        {
+            "key": "91",
+            "main_entity": "식물",
+            "detail_entity": "식물 - 일반"
+        },
+        {
+            "key": "92",
+            "main_entity": "식물",
+            "detail_entity": "과일꽃"
+        },
+        {
+            "key": "93",
+            "main_entity": "식물",
+            "detail_entity": "꽃"
+        },
+        {
+            "key": "94",
+            "main_entity": "식물",
+            "detail_entity": "나무"
+        },
+        {
+            "key": "95",
+            "main_entity": "식물",
+            "detail_entity": "풀"
+        },
+        {
+            "key": "96",
+            "main_entity": "식물",
+            "detail_entity": "식물 유형"
+        },
+        {
+            "key": "97",
+            "main_entity": "식물",
+            "detail_entity": "식물 부분"
+        },
+        {
+            "key": "98",
+            "main_entity": "학문/이론",
+            "detail_entity": "학문/이론 - 일반"
+        },
+        {
+            "key": "99",
+            "main_entity": "학문/이론",
+            "detail_entity": "학문 분야"
+        },
+        {
+            "key": "100",
+            "main_entity": "학문/이론",
+            "detail_entity": "과학 분야"
+        },
+        {
+            "key": "101",
+            "main_entity": "학문/이론",
+            "detail_entity": "사회과학분야"
+        },
+        {
+            "key": "102",
+            "main_entity": "학문/이론",
+            "detail_entity": "의학 분야"
+        },
+        {
+            "key": "103",
+            "main_entity": "학문/이론",
+            "detail_entity": "예술 분야"
+        },
+        {
+            "key": "104",
+            "main_entity": "학문/이론",
+            "detail_entity": "철학 분야"
+        },
+        {
+            "key": "105",
+            "main_entity": "이벤트/사건/휴일",
+            "detail_entity": "사건 - 일반"
+        },
+        {
+            "key": "106",
+            "main_entity": "이벤트/사건/휴일",
+            "detail_entity": "개인사"
+        },
+        {
+            "key": "107",
+            "main_entity": "이벤트/사건/휴일",
+            "detail_entity": "자연이벤트"
+        },
+        {
+            "key": "108",
+            "main_entity": "이벤트/사건/휴일",
+            "detail_entity": "사회활동/현상/운동"
+        },
+        {
+            "key": "109",
+            "main_entity": "이벤트/사건/휴일",
+            "detail_entity": "전쟁/혁명"
+        },
+        {
+            "key": "110",
+            "main_entity": "이벤트/사건/휴일",
+            "detail_entity": "스포츠 행사"
+        },
+        {
+            "key": "111",
+            "main_entity": "이벤트/사건/휴일",
+            "detail_entity": "축제"
+        },
+        {
+            "key": "112",
+            "main_entity": "이벤트/사건/휴일",
+            "detail_entity": "판례"
+        },
+        {
+            "key": "113",
+            "main_entity": "이벤트/사건/휴일",
+            "detail_entity": "논쟁"
+        },
+        {
+            "key": "114",
+            "main_entity": "이벤트/사건/휴일",
+            "detail_entity": "선언/공표"
+        },
+        {
+            "key": "115",
+            "main_entity": "이벤트/사건/휴일",
+            "detail_entity": "휴일/공휴일"
+        },
+        {
+            "key": "116",
+            "main_entity": "이벤트/사건/휴일",
+            "detail_entity": "행사"
+        },
+        {
+            "key": "117",
+            "main_entity": "물질/생물조직",
+            "detail_entity": "물질 - 일반"
+        },
+        {
+            "key": "118",
+            "main_entity": "물질/생물조직",
+            "detail_entity": "원소"
+        },
+        {
+            "key": "119",
+            "main_entity": "물질/생물조직",
+            "detail_entity": "금속"
+        },
+        {
+            "key": "120",
+            "main_entity": "물질/생물조직",
+            "detail_entity": "암석"
+        },
+        {
+            "key": "121",
+            "main_entity": "물질/생물조직",
+            "detail_entity": "화학"
+        },
+        {
+            "key": "122",
+            "main_entity": "물질/생물조직",
+            "detail_entity": "세포/조직/기관"
+        },
+        {
+            "key": "123",
+            "main_entity": "물질/생물조직",
+            "detail_entity": "유전자"
+        },
+        {
+            "key": "124",
+            "main_entity": "색/모양/방향",
+            "detail_entity": "색"
+        },
+        {
+            "key": "125",
+            "main_entity": "색/모양/방향",
+            "detail_entity": "방향"
+        },
+        {
+            "key": "126",
+            "main_entity": "색/모양/방향",
+            "detail_entity": "모양/형태"
+        },
+        {
+            "key": "127",
+            "main_entity": "게임/스포츠",
+            "detail_entity": "게임"
+        },
+        {
+            "key": "128",
+            "main_entity": "게임/스포츠",
+            "detail_entity": "스포츠"
+        },
+        {
+            "key": "129",
+            "main_entity": "게임/스포츠",
+            "detail_entity": "스포츠용어"
+        },
+        {
+            "key": "130",
+            "main_entity": "질병/증상",
+            "detail_entity": "질병/증상/증세"
+        },
+        {
+            "key": "131",
+            "main_entity": "수량",
+            "detail_entity": "수량표현 - 일반"
+        },
+        {
+            "key": "132",
+            "main_entity": "미분류",
+            "detail_entity": "미분류"
+        }
+    ]
+}
